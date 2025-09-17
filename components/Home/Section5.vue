@@ -76,7 +76,7 @@ const { locale } = useI18n()
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #204CB5;
     margin-bottom: 2rem;
@@ -92,7 +92,7 @@ const { locale } = useI18n()
 }
 
 .section-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333333;
     line-height: 1.8;
     margin-bottom: 1.5rem;

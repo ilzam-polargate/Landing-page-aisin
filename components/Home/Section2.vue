@@ -142,7 +142,7 @@ const ebookUrl = computed(() => {
 }
 
 .japanese-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #333333;
   line-height: 1.8;
   font-weight: 400;
