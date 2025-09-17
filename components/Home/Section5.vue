@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <!-- Image Column (previously Video Column) -->
-                <div class="col-lg-8 col-md-7 p-0">
+                <div class="col-xl-8 p-0">
                     <div class="image-wrapper">
                         <div class="">
                             <img 
@@ -16,8 +16,8 @@
                 </div>
 
                 <!-- Content Column -->
-                <div class="col-lg-4 col-md-5 p-0">
-                    <div class="content-wrapper">
+                <div class="col-xl-4 p-0">
+                    <div class="content-wrapper py-5 py-xl-0 px-5">
                         <h2 class="section-title">
                             {{ $t('section3.title') }} {{ $t('section3.titleHighlight') }}
                         </h2>
@@ -69,7 +69,7 @@ const { locale } = useI18n()
 }
 
 .content-wrapper {
-    padding: 0rem 3rem;
+    /* padding: 0rem 3rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
