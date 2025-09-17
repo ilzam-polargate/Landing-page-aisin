@@ -2,12 +2,15 @@
     <section class="video-section">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <!-- Video Column -->
+                <!-- Image Column (previously Video Column) -->
                 <div class="col-lg-8 col-md-7 p-0">
-                    <div class="video-wrapper">
-                        <div class="ratio ratio-1x1">
-                            <iframe src="https://www.youtube.com/embed/ugkrZVBnKjw?rel=0&modestbranding=1"
-                                title="Company Video" allowfullscreen class=""></iframe>
+                    <div class="image-wrapper">
+                        <div class="">
+                            <img 
+                                src="/img/thumbnail-section-5.png" 
+                                alt="Section 5 Thumbnail"
+                                class="thumbnail-image"
+                            />
                         </div>
                     </div>
                 </div>
@@ -44,21 +47,29 @@ const { locale } = useI18n()
 .video-section {
     background-color: #ffffff;
     overflow: hidden;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .container-fluid {
     padding: 0;
 }
 
-.video-wrapper {
+.image-wrapper {
     position: relative;
+    background-color: #000000;
     width: 100%;
     overflow: hidden;
 }
 
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
 .content-wrapper {
-    padding: 3rem 4rem;
+    padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +95,7 @@ const { locale } = useI18n()
     font-size: 1.1rem;
     color: #333333;
     line-height: 1.8;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
 }
 
