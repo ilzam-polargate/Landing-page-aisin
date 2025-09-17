@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "ANNIVERSARY 30th AISIN INDONESIA",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+  },
+  "section1": {
+    "logoMeaning": "記念ロゴに込められた思い",
+    "learnMore": "詳細はこちら"
+  },
+  "section2": {
+    "title": "会社",
+    "titleHighlight": "Digital E-book",
+    "text1": "PT Aisin Indonesia（アイシン・インドネシア）は、インドネシアにおける自動車部品メーカーのリーディングカンパニーであり続けることを強く約束しています。全社員の献身、革新、そして協力を通じて、私たちはこれまで様々な業界の課題を克服し、競争優位性を維持し続けています。",
+    "text2": "本電子ブックでは、革新の精神、事業拡大、持続可能な変革から環境への貢献に至るまでの私たちの歩みを収めています。これらの物語が、読者の皆様や PT Aisin Indonesia（アイシン・インドネシア）の次世代にとって、より良い未来に向かって前進し続けるための励みとなることを願っています。"
+  },
+  "section3": {
+  "title": "Documentary",
+  "titleHighlight": "Video",
+  "subtitle": "走行安全（駐車・運転支援）",
+  "description": "PT Aisin Indonesiaの30年の歩みは、変革への勇気の証です。イノベーションと協働を通じて、私たちは社員、パートナー、そして社会のより明るい未来を築いていきます。",
+  "detail": "「Creating Brighter Future With Transformation（変革でより明るい未来を創造する）」をテーマに、このドキュメンタリーは私たちの成果と、継続的なイノベーションおよびインドネシアと世界への前向きな貢献への取り組みを紹介します。"
+},
+  "footer": {
+    "quickLinksTitle": "クイックリンク",
+    "companyVideo": "会社紹介ビデオ",
+    "companyProfile": "会社概要",
+    "aria": {
+      "instagram": "インスタグラム",
+      "facebook": "フェイスブック"
+    },
+    "copyright": "PT. Aisin Indonesia 著作権所有 2025"
+  }
+}

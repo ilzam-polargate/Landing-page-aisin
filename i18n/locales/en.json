@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "ANNIVERSARY 30th AISIN INDONESIA",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+  },
+  "section1": {
+    "logoMeaning": "The thoughts behind the Anniversary Logo",
+    "learnMore": "LEARN MORE"
+  },
+  "section2": {
+    "title": "Company",
+    "titleHighlight": "Digital E-book",
+    "text1": "PT Aisin Indonesia is firmly committed to being a leading automotive component manufacturer in Indonesia. Through dedication, innovation, and collaboration among all employees, we have successfully overcome various industry challenges and continue to maintain our competitive advantage.",
+    "text2": "This e-book captures our journey from the spirit of innovation, expansion, and sustainable transformation to our contributions to the environment. We hope these stories inspire readers and the next generation of PT Aisin Indonesia to keep moving forward toward a better future."
+  },
+  "section3": {
+    "title": "Documentary",
+    "titleHighlight": "Video",
+    "subtitle": "Driving Safety (Parking and Driving Assistance)",
+    "description": "PT Aisin Indonesia’s 30-year journey is a testament to the courage of transformation. Through innovation and collaboration, we build a brighter future for our employees, partners, and society.",
+    "detail": "With the theme “Creating Brighter Future With Transformation”, this documentary highlights our achievements and our commitment to continuous innovation and positive contributions to Indonesia and the world."
+  },
+  "footer": {
+    "quickLinksTitle": "QUICK LINKS",
+    "companyVideo": "Company Video",
+    "companyProfile": "Company Profile",
+    "aria": {
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "copyright": "PT. Aisin Indonesia All Right Reserved 2025"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "ANNIVERSARY 30th AISIN INDONESIA",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+  },
+  "section1": {
+    "logoMeaning": "Makna di balik Logo Anniversary",
+    "learnMore": "PELAJARI LEBIH LANJUT"
+  },
+  "section2": {
+    "title": "Perusahaan",
+    "titleHighlight": "E-book Digital",
+    "text1": "PT Aisin Indonesia senantiasa berkomitmen menjadi perusahaan manufaktur komponen otomotif terdepan di Indonesia. Melalui dedikasi, inovasi, dan kolaborasi seluruh karyawan, kami berhasil melewati berbagai tantangan industri dan terus menjaga keunggulan kompetitif. ",
+    "text2": "E-book ini merangkum perjalanan kami dari semangat inovasi, ekspansi, transformasi berkelanjutan, hingga kontribusi bagi lingkungan. Semoga kisah ini menjadi inspirasi bagi pembaca dan generasi penerus PT Aisin Indonesia untuk terus melangkah maju menuju masa depan yang lebih baik."
+  },
+  "section3": {
+    "title": "Video",
+    "titleHighlight": "Dokumenter",
+    "subtitle": "Keselamatan Berkendara (Parkir dan Bantuan Mengemudi)",
+    "description": "30 tahun perjalanan PT Aisin Indonesia adalah bukti keberanian bertransformasi. Melalui inovasi dan kolaborasi, kami membangun masa depan yang lebih cerah bagi karyawan, mitra, dan masyarakat.",
+    "detail": "Dengan tema “Creating Brighter Future With Transformation”, video dokumenter ini merangkum kisah pencapaian dan komitmen kami untuk terus berinovasi dan memberikan kontribusi positif bagi Indonesia dan dunia."
+  },
+  "footer": {
+    "quickLinksTitle": "TAUTAN CEPAT",
+    "companyVideo": "Video Perusahaan",
+    "companyProfile": "Profil Perusahaan",
+    "aria": {
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "copyright": "PT. Aisin Indonesia Hak Cipta Dilindungi 2025"
+  }
+}
