@@ -69,7 +69,7 @@ const { locale } = useI18n()
 }
 
 .content-wrapper {
-    padding: 3rem 3rem;
+    padding: 0rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
