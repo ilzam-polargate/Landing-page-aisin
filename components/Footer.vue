@@ -25,7 +25,7 @@
       </div>
 
       <!-- Social Media Section -->
-      <div class="social-section">
+      <!-- <div class="social-section">
         <div class="social-icons">
           <a
             :href="social.instagram"
@@ -46,7 +46,7 @@
             <i class="bi bi-facebook"></i>
           </a>
         </div>
-      </div>
+      </div> -->
 
       <!-- Copyright Section -->
       <div class="copyright-section">
