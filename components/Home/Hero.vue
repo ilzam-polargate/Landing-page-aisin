@@ -1,7 +1,19 @@
 <template>
   <section class="hero-section position-relative">
-    <!-- Background Image -->
-    <div class="hero-background"></div>
+    <!-- Background Video -->
+    <div class="hero-background">
+      <video 
+        class="hero-video"
+        autoplay 
+        muted 
+        loop 
+        playsinline
+      >
+        <source src="/video/hero.mp4" type="video/mp4">
+        <!-- Fallback untuk browser yang tidak support video -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
     
     <!-- Content -->
     <div class="container-fluid h-100 position-relative">
@@ -31,6 +43,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  padding-top: 80px; /* Space for fixed navbar */
 }
 
 .hero-background {
@@ -39,7 +52,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/img/hero-1.webp') center center/cover no-repeat;
+  z-index: 1;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 1;
 }
 
@@ -78,13 +100,13 @@
   .hero-description-wrapper {
     right: 5rem;
   }
-    
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .hero-section {
     height: 80vh;
+    padding-top: 60px; /* Smaller padding for mobile navbar */
   }
   
   .hero-title {
