@@ -62,7 +62,7 @@ const bookImageSrc = computed(() => {
 })
 
 const ebookUrl = computed(() => {
-  return `https://e-book-coral.vercel.app/${locale.value}`
+  return `https://e-book-aisin.vercel.app/${locale.value}`
 })
 </script>
 
