@@ -2,15 +2,40 @@
     <section class="video-section">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <!-- Image Column (previously Video Column) -->
+                <!-- Video Column -->
                 <div class="col-xl-8 p-0">
-                    <div class="image-wrapper">
-                        <div class="">
-                            <img 
-                                src="/img/thumbnail-section-5.png" 
-                                alt="Section 5 Thumbnail"
-                                class="thumbnail-image"
-                            />
+                    <div class="video-wrapper">
+                        <div class="youtube-container">
+                            <!-- YouTube Thumbnail (clickable) -->
+                            <div 
+                                v-if="!isVideoPlaying" 
+                                class="youtube-thumbnail"
+                                @click="playVideo"
+                            >
+                                <img 
+                                    :src="thumbnailUrl" 
+                                    alt="YouTube Video Thumbnail"
+                                    class="thumbnail-image"
+                                />
+                                <div class="play-button-overlay">
+                                    <div class="play-button">
+                                        <svg width="68" height="48" viewBox="0 0 68 48">
+                                            <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                                            <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- YouTube Iframe (when playing) -->
+                            <iframe
+                                v-if="isVideoPlaying"
+                                :src="videoUrl"
+                                class="youtube-iframe"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop;"
+                                allowfullscreen
+                            ></iframe>
                         </div>
                     </div>
                 </div>
@@ -41,35 +66,98 @@
 
 <script setup>
 const { locale } = useI18n()
+
+// YouTube video configuration
+const youtubeVideoId = 'rvYT4mus6UY'
+const isVideoPlaying = ref(false)
+
+// YouTube thumbnail URL (default quality)
+const thumbnailUrl = computed(() => {
+    return `https://img.youtube.com/vi/${youtubeVideoId}/maxresdefault.jpg`
+})
+
+// YouTube embed URL with autoplay when clicked
+const videoUrl = computed(() => {
+    return `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`
+})
+
+const playVideo = () => {
+    isVideoPlaying.value = true
+}
 </script>
 
 <style scoped>
 .video-section {
     background-color: #ffffff;
     overflow: hidden;
-    /* height: 100vh; */
 }
 
 .container-fluid {
     padding: 0;
 }
 
-.image-wrapper {
+.video-wrapper {
     position: relative;
     background-color: #000000;
     width: 100%;
     overflow: hidden;
 }
 
+.youtube-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.youtube-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.youtube-thumbnail:hover {
+    opacity: 0.9;
+}
+
 .thumbnail-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+
+.youtube-thumbnail:hover .play-button-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.youtube-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .content-wrapper {
-    /* padding: 0rem 3rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,10 +198,7 @@ const { locale } = useI18n()
     align-items: center;
     transition: all 0.3s ease;
     align-self: flex-start;
-    /* Tambahkan ini */
-    transition: all 0.3s ease;
     width: fit-content;
-    /* Atau tambahkan ini sebagai alternatif */
 }
 
 .learn-more-link:hover {
