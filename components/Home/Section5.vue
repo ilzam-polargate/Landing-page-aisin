@@ -33,7 +33,7 @@
                                 :src="videoUrl"
                                 class="youtube-iframe"
                                 frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
                         </div>
@@ -76,9 +76,9 @@ const thumbnailUrl = computed(() => {
     return `https://img.youtube.com/vi/${youtubeVideoId}/maxresdefault.jpg`
 })
 
-// YouTube embed URL with autoplay when clicked
+// YouTube embed URL with autoplay and loop when clicked
 const videoUrl = computed(() => {
-    return `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`
+    return `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0&loop=1&playlist=${youtubeVideoId}`
 })
 
 const playVideo = () => {
